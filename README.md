@@ -1,5 +1,9 @@
 # UC–UT Quantum Workshop 2025 (GitHub Pages Template)
 
+Website URL: <a href="https://quantum-programming.github.io/ucutquantum2025/index.html">
+  https://quantum-programming.github.io/ucutquantum2025/index.html
+</a>
+
 This repository is a ready-to-publish template for **`ucutquantum2025.github.io`**.
 
 ## How to use
@@ -9,7 +13,9 @@ This repository is a ready-to-publish template for **`ucutquantum2025.github.io`
 4. Go to **Settings → Pages** → *Build and deployment*:
    - Source: **Deploy from a branch**
    - Branch: **main / (root)**
-5. Wait for deployment. Your site will be live at `https://ucutquantum2025.github.io/`.
+5. Wait for deployment. Your site will be live at <a href="https://quantum-programming.github.io/ucutquantum2025/index.html">
+  https://quantum-programming.github.io/ucutquantum2025/index.html
+</a>。
 
 To edit the **program** (the talk schedule), modify `program.html`.
 To update the **venue map**, change the `href` of the “Open in Google Maps” button in `index.html`.
