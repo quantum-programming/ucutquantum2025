@@ -78,7 +78,7 @@ While the quantum gradient estimation (QGE) algorithm has been shown to achieve 
               <div class="small">Parallelization of Hadamard Test</div>
             </summary>
             <div class="abstract">
-              Abstract
+              The Hadamard Test is a fundamental quantum algorithm widely used in various quantum computing applications. It enables the estimation of the real or imaginary part of <ψ|U|ψ>, where |ψ> is a quantum state and U is a unitary operator. When applying the Hadamard Test to many different unitary operators, the number of distinct quantum circuits required increases accordingly, resulting in higher time and financial costs. In this work, we propose the Parallel Hadamard Test, which can replace any number of individual Hadamard Tests with a single quantum circuit. We demonstrate how this approach can be utilized in concrete examples, including the Variational Quantum Eigensolver (VQE), quantum phase estimation, and quantum kernel methods. For VQE, we also provide a cost comparison to highlight the efficiency gains achieved by our method. This unified approach significantly reduces the number of required quantum circuits, thereby lowering both computational time and financial costs.
             </div>
           </details>
 
@@ -117,12 +117,12 @@ From numerical study, we conjecture new bounds for these spectral radii based on
           <details class="slot">
             <summary>
               <div class="time">14:00–14:30</div>
-              <div class="title">Mahadevan Subramanian</div>
-              <div class="small">Achievable rates for concatenated square Gottesman-Kitaev-Preskill (GKP) codes</div>
+              <div class="title">Nobuyuki Yoshioka</div>
+              <div class="small">Transversal gates for probabilistic implementation of multi-qubit Pauli rotations</div>
             </summary>
             <div class="abstract">
-              The Gottesman-Kitaev-Preskill (GKP) codes are known to achieve optimal rates under displacement noise and pure loss channels, which establishes theoretical foundations for its optimality. However, such optimal rates are only known to be achieved at a discrete set of noise strength with the current self-dual symplectic lattice construction. In this work, we develop a new coding strategy using concatenated continuous variable - discrete variable encodings to go beyond past results and establish GKP's optimal rate over all noise strengths. In particular, for displacement noise, the rate is obtained through a constructive approach by concatenating GKP codes with a quantum polar code and analog decoding. For pure loss channel, we prove the existence of capacity-achieving GKP codes through a random coding approach. These results highlight the capability of concatenation-based GKP codes and provides new methods for constructing good GKP lattices.
-            </div>
+              We introduce a general framework for weak transversal gates -- probabilistic implementation of logical unitaries realized by local physical unitaries -- and propose a novel partially fault-tolerant quantum computing architecture that surpasses the standard Clifford+T architecture on workloads with million-scale Clifford+T gate counts. First, we prove the existence of weak transversal gates on the class of Calderbank-Shor-Steane codes, covering high-rate qLDPC and topological codes such as surface code or color codes, and present an efficient algorithm to determine the physical multi-qubit Pauli rotations required for the desired logical rotation. Second, we propose a partially fault-tolerant Clifford+ϕ architecture that performs in-place Pauli rotations via a repeat-until-success strategy; phenomenological simulations indicate that a rotation of 0.003 attains logical error of 9.5×10^{−5}  on a surface code with d=7 at physical error rate of 10^{−4}, while avoiding the spacetime overheads of magic state factories, small angle synthesis, and routing. Finally, we perform resource estimation on surface and gross codes for a Trotter-like circuit with N=108 logical qubits to show that the Clifford+ϕ architecture outperforms the conventional Clifford+T approach by a factor of tens to a hundred in runtime due to natural rotation-gate parallelism. This work open a novel paradigm for realizing logical operations beyond the constraints of conventional design.
+            </div>              
           </details>
 
           <details class="slot">
@@ -149,18 +149,22 @@ From numerical study, we conjecture new bounds for these spectral radii based on
               <div class="small">Virtual Autopurification in Translationally Invariant Quantum States</div>
             </summary>
             <div class="abstract">
-              Abstract
+              We propose Virtual Autopurification (VAP), a new protocol for virtual purification of thermal or noisy quantum states, leveraging the translational invariance of physical systems. While conventional virtual purification requires multiple copies of the quantum state and global entangled measurements [1–3], our method eliminates this requirement by constructing virtual copies within a single translationally invariant system. Building on the concept of localized virtual purification [4], VAP performs entangled measurements between spatially distant subregions, effectively achieving virtual cooling with exponentially small errors in the inter-subregion distance. We theoretically show that VAP reproduces the results of localized virtual purification with exponential accuracy under the clustering property, and numerical simulations confirm the validity and efficiency of the method. Our results establish VAP as a practical and resource-efficient approach for thermal-state cooling and error mitigation in near-term quantum devices.
+[1] J. Cotler, S. Choi, A. Lukin, H. Gharibyan, T. Grover, M. E. Tai, M. Rispoli, R. Schittko, P. M. Preiss, A. M. Kaufman, M. Greiner, H. Pichler, and P. Hayden, Phys. Rev. X 9, 031013 (2019).
+[2] B. Koczor, Phys. Rev. X 11, 031057 (2021).
+[3] W. J. Huggins, S. McArdle, T. E. O'Brien, J. Lee, N. C. Rubin, S. Boixo, K. B. Whaley, R. Babbush, and J. R. McClean, Phys. Rev. X 11, 041036 (2021).
+[4] H. Hakoshima, S. Endo, K. Yamamoto, Y. Matsuzaki, and N. Yoshioka, Phys. Rev. Lett. 133, 080601 (2024). 
             </div>
           </details>
 
           <details class="slot">
             <summary>
               <div class="time">16:00–16:30</div>
-              <div class="title">Nobuyuki Yoshioka</div>
-              <div class="small">Transversal gates for probabilistic implementation of multi-qubit Pauli rotations</div>
+              <div class="title">Mahadevan Subramanian</div>
+              <div class="small">Achievable rates for concatenated square Gottesman-Kitaev-Preskill (GKP) codes</div>
             </summary>
             <div class="abstract">
-              We introduce a general framework for weak transversal gates -- probabilistic implementation of logical unitaries realized by local physical unitaries -- and propose a novel partially fault-tolerant quantum computing architecture that surpasses the standard Clifford+T architecture on workloads with million-scale Clifford+T gate counts. First, we prove the existence of weak transversal gates on the class of Calderbank-Shor-Steane codes, covering high-rate qLDPC and topological codes such as surface code or color codes, and present an efficient algorithm to determine the physical multi-qubit Pauli rotations required for the desired logical rotation. Second, we propose a partially fault-tolerant Clifford+ϕ architecture that performs in-place Pauli rotations via a repeat-until-success strategy; phenomenological simulations indicate that a rotation of 0.003 attains logical error of 9.5×10^{−5}  on a surface code with d=7 at physical error rate of 10^{−4}, while avoiding the spacetime overheads of magic state factories, small angle synthesis, and routing. Finally, we perform resource estimation on surface and gross codes for a Trotter-like circuit with N=108 logical qubits to show that the Clifford+ϕ architecture outperforms the conventional Clifford+T approach by a factor of tens to a hundred in runtime due to natural rotation-gate parallelism. This work open a novel paradigm for realizing logical operations beyond the constraints of conventional design.
+              The Gottesman-Kitaev-Preskill (GKP) codes are known to achieve optimal rates under displacement noise and pure loss channels, which establishes theoretical foundations for its optimality. However, such optimal rates are only known to be achieved at a discrete set of noise strength with the current self-dual symplectic lattice construction. In this work, we develop a new coding strategy using concatenated continuous variable - discrete variable encodings to go beyond past results and establish GKP's optimal rate over all noise strengths. In particular, for displacement noise, the rate is obtained through a constructive approach by concatenating GKP codes with a quantum polar code and analog decoding. For pure loss channel, we prove the existence of capacity-achieving GKP codes through a random coding approach. These results highlight the capability of concatenation-based GKP codes and provides new methods for constructing good GKP lattices.
             </div>
           </details>
 
